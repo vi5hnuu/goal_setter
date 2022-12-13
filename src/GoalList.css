@@ -1,0 +1,66 @@
+.goal_container {
+  display: flex;
+  flex-direction: column;
+  background-color: #d09cfa;
+  width: 60rem;
+  margin: auto;
+  padding: 0.5rem;
+  max-width: 95%;
+  min-height: 80vh;
+  max-height: 100vh;
+  border-radius: 5px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+.goalList_header {
+  background-color: #f3ccff;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 0.1rem;
+  text-transform: uppercase;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 1rem;
+}
+.goal_list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  flex: 1;
+  overflow-y: scroll;
+}
+/* width */
+.goal_list::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+.goal_list::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 10px;
+}
+
+/* Handle */
+.goal_list::-webkit-scrollbar-thumb {
+  background: #a555ec;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+.goal_list::-webkit-scrollbar-thumb:hover {
+  background: #860bf3;
+}
+.goal_item {
+  background-color: #a555ec;
+  margin-right: 5px;
+  border-radius: 5px;
+  padding: 0.5rem 1rem;
+  font-size: 1.5rem;
+  transition: all 1s;
+}
+.goal_item:hover {
+  z-index: 10;
+  transform: scale(0.98);
+  background-color: #ffffd0;
+}
